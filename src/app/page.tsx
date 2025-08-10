@@ -3,6 +3,11 @@
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-sans tracking-tight">
+      {/* HEADER */}
+      <div className="absolute top-0 left-0 z-10 p-6">
+        <h1 className="text-2xl font-bold text-[#F8F3EA] bg-black px-3 py-2 rounded-lg shadow-[4px_4px_0_0_#2A7E21]">ZRC-Stealth</h1>
+      </div>
+      
       {/* HERO */}
       <div className="relative py-20 px-4">
         <div className="absolute inset-0 flex items-center justify-center">

@@ -1,42 +1,58 @@
-# ZRC-Stealth 
----  Private Transactions on Zircuit using Stealth Account
+# ZRC-Stealth
 
-Experience the future of private transactions using **stealth addresses** on the  Zircuit.  
-Built with cutting-edge stealth address technology and zero-knowledge infrastructure.
+ZRC-Stealth is the next step in blockchain privacy — combining stealth addresses and privacy pools into a single, dual-layer system that closes every gap in current cryptocurrency privacy solutions.
 
----
+In today's blockchain environment, transactions are pseudonymous, leaving a permanent trail that chain analysis can trace back to users. Even so-called "private" solutions often hide only the sender or the recipient — never both.
 
-## 🔐 What Are Stealth Addresses?
+ZRC-Stealth changes that.
 
-Stealth addresses allow **private fund receiving on-chain**. They enhance transaction confidentiality while preserving both sender and receiver privacy.
+## The Problem Today
 
----
+- **Traditional transactions** reveal both sender and recipient.
+- **Privacy pools** hide senders but still expose recipients.
+- **Stealth addresses** hide recipients but still expose senders.
 
-## ℹ️ How It Works
+## The Complete Privacy Solution
 
-- ✅ Stealth addresses are **only used for receiving funds privately**
-- ⚠️ When **sending**, your **regular address still appears** on the block explorer
-- 🪬 Use stealth addresses to receive **anonymous payments**
+By layering privacy pools with stealth addresses, ZRC-Stealth achieves total transaction confidentiality:
 
----
+- **Sender Hidden**: Privacy pool deposits and withdrawals unlink the transaction origin.
+- **Recipient Hidden**: Unique, one-time stealth addresses ensure recipients are never linked to their public addresses.
+- **Amount Obfuscated**: Mixed withdrawals break any link between sender, recipient, and amount.
 
-## ⚙️ Project Features
+## How It Works
 
-- ✅ **Stealth Address Generation** — with a single click
-- 🔒 **One-time Use Addresses** — ensuring maximum unlinkability
-- 🏷️ **View Tags** — for efficient scanning of received funds
-- 🧠 **Ephemeral Keys** — temporary key generation per transaction
-- 🧮 **SECP256k1 Cryptography** — secure and proven cryptographic standard
+### 1. Deposit & Mix (Privacy Pool)
+- The sender deposits into a pool shared with many others.
+- Funds are mixed and anonymized using zero-knowledge proofs.
 
----
+### 2. Generate Stealth Address
+- The sender uses the recipient's public stealth meta-address to generate a unique, one-time receiving address.
+- Only the recipient can identify and control this address.
 
+### 3. Anonymous Withdrawal
+- The sender withdraws from the privacy pool directly to the stealth address.
+- The funds arrive in a Safe wallet with full security and programmable features.
 
----
+### 4. Complete Anonymity
+- No traceable link between sender and recipient.
+- No exposure of transaction amounts.
+- No correlation through timing analysis.
 
-## 🧰 Built With
+## Key Features
+
+- **One-Click Stealth Address Generation**
+- **Ephemeral Keys & One-Time Use Addresses**
+- **View Tags for Easy Fund Discovery**
+- **SECP256k1 Cryptography for Security**
+- **Safe Wallet Integration for Enhanced Control**
+
+## Built With
 
 - **FluidKey Account Kit** — Implements the [ERC-5564 stealth address standard](https://eips.ethereum.org/EIPS/eip-5564)
+- **Zero-Knowledge Proofs** — For privacy pool mixing and verification
+- **Safe Wallet** — For secure fund management and programmable features
 
 ---
 
-> Stealth addresses unlock a new layer of privacy on public blockchains — enabling **confidential, unlinkable, and censorship-resistant** payments.
+> ZRC-Stealth represents the future of blockchain privacy — enabling truly anonymous, unlinkable, and censorship-resistant transactions through innovative dual-layer privacy technology.
