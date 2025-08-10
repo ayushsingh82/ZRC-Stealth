@@ -1,0 +1,8 @@
+# Exclude contract directory from Next.js build
+contract/
+contracts/
+hardhat.config.ts
+tsconfig.json
+scripts/
+test/
+ignition/ 
