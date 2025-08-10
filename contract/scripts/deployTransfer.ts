@@ -1,7 +1,7 @@
 import { ethers } from "hardhat";
 
 async function main() {
-  console.log("🚀 Deploying TokenTransfer contract to Horizen testnet...");
+  console.log("🚀 Deploying TokenTransfer contract to Zircuit testnet...");
 
   // Get the contract factory
   const TokenTransfer = await ethers.getContractFactory("TokenTransfer");
@@ -16,9 +16,9 @@ async function main() {
   
   console.log("✅ TokenTransfer deployed successfully!");
   console.log("Contract Address:", contractAddress);
-  console.log("Network: Horizen Testnet");
-  console.log("Chain ID: 845320009");
-  console.log("Explorer: https://horizen-explorer-testnet.appchain.base.org/address/" + contractAddress);
+  console.log("Network: Zircuit Testnet");
+  console.log("Chain ID: 48898");
+  console.log("Explorer: https://Zircuit-explorer-testnet.appchain.base.org/address/" + contractAddress);
   
   // Verify deployment
   console.log("\n🔍 Verifying deployment...");

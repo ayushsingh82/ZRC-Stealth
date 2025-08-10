@@ -4,9 +4,9 @@ import "@nomicfoundation/hardhat-toolbox";
 const config: HardhatUserConfig = {
   solidity: "0.8.28",
   networks: {
-    horizenTestnet: {
-      url: "https://horizen-rpc-testnet.appchain.base.org",
-      chainId: 845320009,
+    ZircuitTestnet: {
+      url: "https://Zircuit-rpc-testnet.appchain.base.org",
+      chainId: 48898,
       accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
       gasPrice: 1000000000, // 1 gwei
       gas: 2100000,
@@ -18,15 +18,15 @@ const config: HardhatUserConfig = {
   },
   etherscan: {
     apiKey: {
-      horizenTestnet: "not-needed", // Horizen doesn't have Etherscan
+      ZircuitTestnet: "not-needed", // Zircuit doesn't have Etherscan
     },
     customChains: [
       {
-        network: "horizenTestnet",
-        chainId: 845320009,
+        network: "ZircuitTestnet",
+        chainId: 48898,
         urls: {
-          apiURL: "https://horizen-explorer-testnet.appchain.base.org/api",
-          browserURL: "https://horizen-explorer-testnet.appchain.base.org"
+          apiURL: "https://Zircuit-explorer-testnet.appchain.base.org/api",
+          browserURL: "https://Zircuit-explorer-testnet.appchain.base.org"
         }
       }
     ]

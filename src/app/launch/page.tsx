@@ -73,7 +73,7 @@ export default function LaunchPage() {
 
   // Generate stealth address when wallet connects
   useEffect(() => {
-    if (isConnected && userAddress && chainId === 845320009) { // zircuit testnet chain ID
+    if (isConnected && userAddress && chainId === 48898) { // zircuit testnet chain ID
       generateStealthAddress();
     }
   }, [isConnected, userAddress, chainId]);
@@ -264,19 +264,19 @@ export default function LaunchPage() {
       {/* Hero Section */}
       <div className="relative py-20 px-4">
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-full max-w-6xl h-64 bg-gradient-to-r from-[#FAF7C0] via-[#FCF569] to-[#FEDE27] rounded-b-[50%] shadow-2xl flex items-end justify-center pb-8">
+          <div className="w-full max-w-6xl h-64 bg-[#F8F3EA] rounded-b-[50%] shadow-2xl flex items-end justify-center pb-8">
             <div className="text-center">
             <p className="text-sm font-black mb-4 text-white bg-black px-3 py-2 rounded-lg inline-block">Experience the Future of</p>
             <h3 className="text-4xl font-bold font-black text-black italic mb-1">
                 Stealth Account
               </h3>
-              <h2 className="text-lg font-black mb-4 text-[#FCD119] bg-black px-3 py-2 rounded-lg inline-block italic">on Horizen</h2>
+              <h2 className="text-lg font-black mb-4 text-[#F8F3EA] bg-black px-3 py-2 rounded-lg inline-block italic">on Zircuit</h2>
             </div>
           </div>
 
           {/* BOX 4 - Claim Funds */}
-          <div className="bg-white border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-6 rounded-lg">
-            <h2 className="text-xl font-black mb-4 text-[#FCD119] bg-black px-3 py-2 rounded-lg inline-block">
+          <div className="bg-white border-2 border-black shadow-[8px_8px_0_0_#2A7E21] p-6 rounded-lg">
+            <h2 className="text-xl font-black mb-4 text-[#F8F3EA] bg-black px-3 py-2 rounded-lg inline-block">
               Claim Stealth Funds
             </h2>
             <p className="text-xs text-black mb-4">
@@ -294,14 +294,14 @@ export default function LaunchPage() {
                   value={stealthAddressToClaim}
                   onChange={(e) => setStealthAddressToClaim(e.target.value)}
                   placeholder="0x..."
-                  className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
+                  className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_#2A7E21] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
                 />
               </div>
               
               <button
                 onClick={handleClaimCheck}
                 disabled={!isConnected || !stealthAddressToClaim}
-                className="w-full py-2 px-3 bg-[#FCD119] border-2 border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,1)] text-sm font-bold text-black hover:bg-[#FCD119]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-2 px-3 bg-[#F8F3EA] border-2 border-black rounded-md shadow-[4px_4px_0_0_#2A7E21] text-sm font-bold text-black hover:bg-[#F8F3EA]/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Check if I Can Claim
               </button>
@@ -328,7 +328,7 @@ export default function LaunchPage() {
         <div className="grid md:grid-cols-3 gap-6">
           
           {/* BOX 1 - Stealth Account Info */}
-          <div className="bg-[#FCD119] border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-6 rounded-lg">
+          <div className="bg-[#F8F3EA] border-2 border-black shadow-[8px_8px_0_0_#2A7E21] p-6 rounded-lg">
             <h2 className="text-xl font-black mb-4 text-white bg-black px-3 py-2 rounded-lg inline-block">
               Stealth Account
             </h2>
@@ -342,13 +342,13 @@ export default function LaunchPage() {
             {isConnected ? (
               <div className="space-y-4">
                 <div className="text-center p-2 bg-black text-white rounded text-xs">
-                  Chain ID: {chainId} {chainId === 845320009 ? '✓ Horizen Testnet' : '⚠️ Wrong Network'}
+                  Chain ID: {chainId} {chainId === 48898 ? '✓ Zircuit Testnet' : '⚠️ Wrong Network'}
                 </div>
                 
-                {chainId !== 845320009 ? (
+                {chainId !== 48898 ? (
                   <div className="text-center">
-                    <p className="text-sm text-red-600 font-bold">Please switch to Horizen Testnet</p>
-                    <p className="text-xs text-black">Chain ID: 845320009</p>
+                    <p className="text-sm text-red-600 font-bold">Please switch to Zircuit Testnet</p>
+                    <p className="text-xs text-black">Chain ID: 48898</p>
                   </div>
                 ) : isGeneratingStealth ? (
                   <div className="text-center">
@@ -400,8 +400,8 @@ export default function LaunchPage() {
           </div>
 
           {/* BOX 2 - Privacy Features */}
-          <div className="bg-white border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-6 rounded-lg">
-            <h2 className="text-xl font-black mb-4 text-[#FCD119] bg-black px-3 py-2 rounded-lg inline-block">
+          <div className="bg-white border-2 border-black shadow-[8px_8px_0_0_#2A7E21] p-6 rounded-lg">
+            <h2 className="text-xl font-black mb-4 text-[#F8F3EA] bg-black px-3 py-2 rounded-lg inline-block">
               FluidKey account kit
             </h2>
             <p className="text-sm text-black mb-4 leading-relaxed">
@@ -428,8 +428,8 @@ export default function LaunchPage() {
           </div>
 
           {/* BOX 3 - Transfer Form */}
-          <div className="bg-white border-2 border-black shadow-[8px_8px_0_0_rgba(0,0,0,1)] p-6 rounded-lg">
-            <h2 className="text-xl font-black mb-4 text-[#FCD119] bg-black px-3 py-2 rounded-lg inline-block">
+          <div className="bg-white border-2 border-black shadow-[8px_8px_0_0_#2A7E21] p-6 rounded-lg">
+            <h2 className="text-xl font-black mb-4 text-[#F8F3EA] bg-black px-3 py-2 rounded-lg inline-block">
               Send Privately
             </h2>
             
@@ -460,7 +460,7 @@ export default function LaunchPage() {
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                   placeholder="0x..."
-                  className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
+                  className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_#2A7E21] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
                   required
                 />
               </div>
@@ -477,7 +477,7 @@ export default function LaunchPage() {
                   placeholder="0.1"
                   step="0.001"
                   min="0"
-                  className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
+                  className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_#2A7E21] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
                   required
                 />
               </div>
@@ -485,7 +485,7 @@ export default function LaunchPage() {
               <button
                 type="submit"
                 disabled={isPending || !isConnected}
-                className="w-full py-3 px-4 border-2 border-black rounded-md shadow-[6px_6px_0_0_rgba(0,0,0,1)] text-sm font-bold text-black bg-[#FCD119] hover:bg-[#FCD119]/90 hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FCD119] transition-all duration-200 active:shadow-[2px_2px_0_0_rgba(0,0,0,1)] active:translate-x-[4px] active:translate-y-[4px] disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-3 px-4 border-2 border-black rounded-md shadow-[6px_6px_0_0_#2A7E21] text-sm font-bold text-black bg-[#F8F3EA] hover:bg-[#F8F3EA]/90 hover:shadow-[4px_4px_0_0_#2A7E21] hover:translate-x-[2px] hover:translate-y-[2px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F8F3EA] transition-all duration-200 active:shadow-[2px_2px_0_0_#2A7E21] active:translate-x-[4px] active:translate-y-[4px] disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isPending ? 'Processing...' : 'Send Transaction'}
               </button>
@@ -493,7 +493,7 @@ export default function LaunchPage() {
 
             {/* Stealth Send Form */}
             <div className="mt-6 pt-6 border-t-2 border-black">
-              <h3 className="text-lg font-black mb-4 text-[#FCD119] bg-black px-3 py-2 rounded-lg inline-block">
+              <h3 className="text-lg font-black mb-4 text-[#F8F3EA] bg-black px-3 py-2 rounded-lg inline-block">
                 Send to Stealth Address
               </h3>
               <p className="text-xs text-black mb-4">
@@ -511,7 +511,7 @@ export default function LaunchPage() {
                     value={stealthAddressToSend}
                     onChange={(e) => setStealthAddressToSend(e.target.value)}
                     placeholder="0x..."
-                    className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
+                    className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_#2A7E21] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
                     required
                   />
                 </div>
@@ -528,7 +528,7 @@ export default function LaunchPage() {
                     placeholder="0.1"
                     step="0.001"
                     min="0"
-                    className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_rgba(0,0,0,1)] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
+                    className="w-full px-3 py-2 border-2 border-black rounded-md shadow-[4px_4px_0_0_#2A7E21] focus:outline-none focus:ring-0 focus:border-black bg-white text-black placeholder-gray-500"
                     required
                   />
                 </div>
@@ -536,7 +536,7 @@ export default function LaunchPage() {
                 <button
                   type="submit"
                   disabled={isPending || !isConnected}
-                  className="w-full py-3 px-4 border-2 border-black rounded-md shadow-[6px_6px_0_0_rgba(0,0,0,1)] text-sm font-bold text-black bg-[#FCD119] hover:bg-[#FCD119]/90 hover:shadow-[4px_4px_0_0_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#FCD119] transition-all duration-200 active:shadow-[2px_2px_0_0_rgba(0,0,0,1)] active:translate-x-[4px] active:translate-y-[4px] disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full py-3 px-4 border-2 border-black rounded-md shadow-[6px_6px_0_0_#2A7E21] text-sm font-bold text-black bg-[#F8F3EA] hover:bg-[#F8F3EA]/90 hover:shadow-[4px_4px_0_0_#2A7E21] hover:translate-x-[2px] hover:translate-y-[2px] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#F8F3EA] transition-all duration-200 active:shadow-[2px_2px_0_0_#2A7E21] active:translate-x-[4px] active:translate-y-[4px] disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isPending ? 'Processing...' : 'Send to Stealth Address'}
                 </button>
@@ -561,12 +561,12 @@ export default function LaunchPage() {
                   Transaction Hash: {hash}
                 </p>
                 <a 
-                  href={`https://horizen-explorer-testnet.appchain.base.org/tx/${hash}`}
+                  href={`https://Zircuit-explorer-testnet.appchain.base.org/tx/${hash}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-blue-600 hover:text-blue-800 underline"
                 >
-                  🔍 View on Horizen Explorer
+                  🔍 View on Zircuit Explorer
                 </a>
               </div>
             )}

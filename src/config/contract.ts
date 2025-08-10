@@ -12,24 +12,24 @@ export const erc20Config = {
   abi: ERC20Abi,
 } as const;
 
-// Horizen testnet configuration
-export const horizenConfig = {
-  chainId: 845320009,
-  name: "Horizen Testnet",
-  network: "horizen-testnet",
+// Zircuit testnet configuration
+export const ZircuitConfig = {
+  chainId: 48898,
+  name: "Zircuit Testnet",
+  network: "Zircuit-testnet",
   nativeCurrency: {
     decimals: 18,
     name: "ETH",
     symbol: "ETH",
   },
   rpcUrls: {
-    public: { http: ["https://horizen-rpc-testnet.appchain.base.org"] },
-    default: { http: ["https://horizen-rpc-testnet.appchain.base.org"] },
+    public: { http: ["https://Zircuit-rpc-testnet.appchain.base.org"] },
+    default: { http: ["https://Zircuit-rpc-testnet.appchain.base.org"] },
   },
   blockExplorers: {
     default: { 
-      name: "Horizen Explorer", 
-      url: "https://horizen-explorer-testnet.appchain.base.org/" 
+      name: "Zircuit Explorer", 
+      url: "https://Zircuit-explorer-testnet.appchain.base.org/" 
     },
   },
   testnet: true,

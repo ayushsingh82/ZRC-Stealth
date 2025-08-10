@@ -12,7 +12,7 @@ export default function Home() {
               <h3 className="text-6xl font-bold font-black text-black italic mb-1">
                 PRIVATE Transaction
               </h3>
-              <h2 className="text-6xl font-black mb-4 text-[#F8F3EA] bg-black px-3 py-2 rounded-lg inline-block italic">on Horizen</h2>
+              <h2 className="text-6xl font-black mb-4 text-[#F8F3EA] bg-black px-3 py-2 rounded-lg inline-block italic">on Zircuit</h2>
             </div>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function Home() {
               Our Zero-Knowledge Edge
             </h2>
             <p className="text-sm text-black mb-4 leading-relaxed">
-              Harness Horizen's advanced zero-knowledge proof technology for:
+              Harness Zircuit's advanced zero-knowledge proof technology for:
             </p>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center">
@@ -123,11 +123,11 @@ export default function Home() {
               The Future of Private Transactions
             </h3>
           <p className="text-black leading-relaxed mb-6">
-            We're building the next generation of blockchain privacy technology. Our platform combines the power of Horizen's zero-knowledge proofs with cutting-edge cryptographic protocols to deliver truly anonymous transactions.
+            We're building the next generation of blockchain privacy technology. Our platform combines the power of Zircuit's zero-knowledge proofs with cutting-edge cryptographic protocols to deliver truly anonymous transactions.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="text-lg font-bold text-[#FCD119] mb-2 bg-black px-3 py-1 rounded-lg inline-block">Advanced Privacy</h4>
+              <h4 className="text-lg font-bold text-[#F8F3EA] mb-2 bg-black px-3 py-1 rounded-lg inline-block">Advanced Privacy</h4>
               <p className="text-black text-sm mt-2">
                 State-of-the-art zero-knowledge proofs ensure your transactions remain completely anonymous while maintaining full security and transparency.
               </p>
