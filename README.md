@@ -1,6 +1,6 @@
-# 🕵️‍♂️ Private Transactions on Horizen – Stealth Account
+# ZRC-Stealth 🕵️‍♂️ Private Transactions on Zircuit using Stealth Account
 
-Experience the future of private transactions using **stealth addresses** on the Horizen Testnet.  
+Experience the future of private transactions using **stealth addresses** on the  Zircuit.  
 Built with cutting-edge stealth address technology and zero-knowledge infrastructure.
 
 ---
@@ -29,10 +29,6 @@ Stealth addresses allow **private fund receiving on-chain**. They enhance transa
 
 ---
 
-## 🧪 Network Info
-
-- **Chain**: Horizen Testnet  
-- **Chain ID**: `845320009`
 
 ---
 
