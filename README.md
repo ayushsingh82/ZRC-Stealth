@@ -1,4 +1,5 @@
-# ZRC-Stealth 🕵️‍♂️ Private Transactions on Zircuit using Stealth Account
+# ZRC-Stealth 
+---  Private Transactions on Zircuit using Stealth Account
 
 Experience the future of private transactions using **stealth addresses** on the  Zircuit.  
 Built with cutting-edge stealth address technology and zero-knowledge infrastructure.

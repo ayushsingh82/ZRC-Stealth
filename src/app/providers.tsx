@@ -6,6 +6,7 @@ import {
   RainbowKitProvider,
 } from '@rainbow-me/rainbowkit';
 import { WagmiProvider } from 'wagmi';
+import { zircuitGarfieldTestnet } from 'viem/chains';
 
 import {
   QueryClientProvider,

@@ -73,7 +73,7 @@ export default function LaunchPage() {
 
   // Generate stealth address when wallet connects
   useEffect(() => {
-    if (isConnected && userAddress && chainId === 845320009) { // Horizen testnet chain ID
+    if (isConnected && userAddress && chainId === 845320009) { // zircuit testnet chain ID
       generateStealthAddress();
     }
   }, [isConnected, userAddress, chainId]);
